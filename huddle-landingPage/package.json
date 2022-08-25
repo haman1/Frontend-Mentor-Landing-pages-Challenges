@@ -1,0 +1,11 @@
+{
+  "name": "huddle-landing-page-with-single-introductory-section-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass  --no-source-map sass:public/css -w"
+  },
+  "author": "ombasah",
+  "license": "ISC"
+}
