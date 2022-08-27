@@ -1,0 +1,29 @@
+// ## Colors
+
+// ### Primary
+
+$pink: hsl(322, 100%, 66%);
+
+// ### Neutral
+
+$pale-cyan: hsl(193, 100%, 96%);
+$dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+
+// - Font size: 18px
+$fs:55%;
+// ### Headings
+
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+$ff-heading: 'Poppins', sans-serif;
+$fw-heading: 600;
+
+
+// ### Body, Call-to-actions
+
+// - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+// - Weights: 400, 700
+$ff-body:'Open Sans', sans-serif;;
+$fw-body-400: 400;
+$fw-body-700: 700;
+$fw-cta: 700;

@@ -1,0 +1,156 @@
+// https://piccalil.li/blog/a-modern-css-reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html{
+    background-color: white;
+    font-family: $ff-body;
+    font-size: $fs;
+    font-weight: $fw-body-400;
+    color: $dark-cyan;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    min-width: 375px;
+    margin: auto;
+    position: relative;
+   
+
+}
+
+
+h1,h2{
+    font-family: $ff-heading;
+    font-weight: $fw-heading;
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    text-align: center;
+    padding: 2rem;
+    color: $dark-cyan;
+            
+}
+h1{
+  font-size: 2.8rem;
+}
+.container{
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background-color:whitesmoke;
+  padding: 2rem;
+  margin: 5rem 2rem;
+}
+p{
+  font-size: 2rem;
+  color: $dark-cyan;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn, .btn__cta{
+  padding: 1.5rem;
+  border-radius: 30rem;
+  border-color: transparent;
+  font-family: $ff-body;
+  font-weight: $fw-cta;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+.btn--primary{
+  color: black;
+  width: 15rem;
+  background-color: white;
+}
+.btn--secondary{
+  color: white;
+  background-color: $pink;
+  width: 60%;
+  margin: 0 18%;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.btn--tertiary{
+  color: white;
+  background-color: $pink;
+  width: 60%;
+  margin: 0 18%;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+.flex{
+  display:flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}

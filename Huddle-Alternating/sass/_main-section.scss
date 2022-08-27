@@ -1,0 +1,29 @@
+.header-hero{
+    background-color: $pale-cyan;
+    padding: 2rem 3rem;
+    background-image: url(/images/bg-hero-mobile.svg);
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+  
+
+    .hero{
+        .hero__text{
+          
+            .description_text{
+                font-size: 150%;
+                text-align: center;
+                margin-bottom: 2rem;
+                font-weight: $fw-body-400;
+                color: black;
+            }
+        }
+        .hero__img{
+            margin-top: 3rem;
+        }
+        
+    }
+}
