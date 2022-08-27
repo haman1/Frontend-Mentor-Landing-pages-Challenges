@@ -1,0 +1,434 @@
+.header-hero {
+  background-color: hsl(193deg, 100%, 96%);
+  padding: 2rem 3rem;
+  background-image: url(/images/bg-hero-mobile.svg);
+}
+.header-hero header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-hero .hero .hero__text .description_text {
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: black;
+}
+.header-hero .hero .hero__img {
+  margin-top: 3rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 55%;
+  font-weight: 400;
+  color: hsl(192deg, 100%, 9%);
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  min-width: 375px;
+  margin: auto;
+  position: relative;
+}
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  text-align: center;
+  padding: 2rem;
+  color: hsl(192deg, 100%, 9%);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+.container {
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  padding: 2rem;
+  margin: 5rem 2rem;
+}
+
+p {
+  font-size: 2rem;
+  color: hsl(192deg, 100%, 9%);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn, .btn__cta {
+  padding: 1.5rem;
+  border-radius: 30rem;
+  border-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn__cta:hover {
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: black;
+  width: 15rem;
+  background-color: white;
+}
+
+.btn--secondary {
+  color: white;
+  background-color: hsl(322deg, 100%, 66%);
+  width: 60%;
+  margin: 0 18%;
+}
+.btn--secondary:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn--tertiary {
+  color: white;
+  background-color: hsl(322deg, 100%, 66%);
+  width: 60%;
+  margin: 0 18%;
+}
+.btn--tertiary:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  border-radius: 1rem;
+  background-color: rgba(253, 244, 244, 0.979);
+  margin: 0 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 20rem;
+  line-height: 3rem;
+}
+.cta h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.features {
+  position: relative;
+}
+.features .your-users {
+  margin-bottom: 11rem;
+}
+
+@media (min-width: 760px) {
+  html {
+    font-size: 45%;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .btn--secondary {
+    width: 20rem;
+    margin: 0 30%;
+    margin-top: 1.5rem;
+  }
+  .hero__text {
+    font-size: 68%;
+  }
+  .hero__text h1 {
+    margin-bottom: 0;
+  }
+  .hero__text .hero__img img {
+    margin-top: 7rem;
+  }
+  .container {
+    display: flex;
+    gap: 2rem;
+    padding: 0 5%;
+  }
+  .grow_together {
+    display: flex;
+    align-items: center;
+  }
+  .grow_together .section-img {
+    order: 1;
+    width: 70%;
+  }
+  .grow_together .section-text-content {
+    width: 100%;
+    text-align: center;
+  }
+  .flowing-conversations {
+    display: flex;
+    align-items: center;
+  }
+  .flowing-conversations .section-text-content {
+    width: 100%;
+    text-align: center;
+  }
+  .flowing-conversations .section-img img {
+    order: 1;
+    width: 40%;
+  }
+  .your-users {
+    display: flex;
+    align-items: center;
+  }
+  .your-users .section-img {
+    order: 1;
+  }
+  .your-users .section-text-content {
+    width: 50%;
+    text-align: center;
+  }
+  .your-users .section-img {
+    order: 1;
+    width: 70%;
+  }
+  .cta {
+    width: 45%;
+    margin: 0 27%;
+    padding: 8rem;
+  }
+  .cta .btn--tertiary {
+    width: 28rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10rem;
+  }
+  .footer-links-first {
+    margin-top: 27rem;
+  }
+  .footer-links-second {
+    margin-top: 27rem;
+  }
+  .footer__icons {
+    font-size: 1.6rem;
+  }
+  .footer__social-icons {
+    margin-top: 27rem;
+    margin-right: 5rem;
+  }
+  .wrapper {
+    margin-bottom: 8rem;
+  }
+}
+@media (min-width: 1440px) {
+  p {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .hero {
+    padding: 5rem;
+    display: flex;
+    gap: 3rem;
+  }
+  .hero__text {
+    width: 60%;
+  }
+  .container {
+    display: flex;
+    gap: 3rem;
+    padding: 0 5%;
+  }
+  .grow_together {
+    display: flex;
+    align-items: center;
+  }
+  .grow_together .section-img {
+    order: 1;
+  }
+  .grow_together .section-text-content {
+    width: 100%;
+    text-align: center;
+  }
+  .flowing-conversations {
+    display: flex;
+    align-items: center;
+  }
+  .flowing-conversations .section-text-content {
+    width: 50%;
+    text-align: center;
+  }
+  .your-users {
+    display: flex;
+    align-items: center;
+  }
+  .your-users .section-img {
+    order: 1;
+  }
+  .your-users .section-text-content {
+    width: 50%;
+    text-align: center;
+  }
+  .cta {
+    width: 40%;
+    margin: 0 30%;
+    padding: 5rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10rem;
+  }
+  .footer-links-first {
+    margin-top: 25rem;
+  }
+  .footer-links-second {
+    margin-top: 25rem;
+  }
+  .footer__social-icons {
+    margin-top: 25rem;
+  }
+  .wrapper {
+    margin-bottom: 8rem;
+  }
+}
+.footer {
+  background-color: hsl(192deg, 100%, 9%);
+  color: #fff;
+  padding: 0 2rem;
+  margin-top: 20rem;
+}
+.footer .footer__logo {
+  padding-top: 20rem;
+  margin-bottom: 3rem;
+  left: 1.5rem;
+}
+.footer .footer__icons {
+  margin-bottom: 3.5rem;
+}
+.footer .footer-links-first {
+  margin-bottom: 3rem;
+}
+.footer .footer-links-first ul li:hover {
+  text-decoration: underline;
+}
+.footer .footer-links-second {
+  margin-bottom: 5rem;
+}
+.footer .footer-links-second ul li:hover {
+  text-decoration: underline;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer__social-icons ul {
+  list-style: none;
+}
+.footer__social-icons ul:hover {
+  cursor: pointer;
+}
+.footer .second {
+  margin-top: -8rem;
+}
+.footer .wrapper {
+  align-items: center;
+  justify-content: center;
+}
+.footer .wrapper li {
+  border: 2px solid #fff;
+  border-radius: 20rem;
+  padding: 1.2rem;
+}
+.footer .wrapper li i:hover {
+  background-color: hsl(322deg, 100%, 66%);
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 30rem;
+  border: 0;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
