@@ -1,0 +1,12 @@
+{
+  "name": "fylo-landing-page-with-two-column-layout-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass  --no-source-map sass:public/css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
