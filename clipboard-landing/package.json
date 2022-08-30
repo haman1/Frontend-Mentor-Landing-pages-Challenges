@@ -1,0 +1,11 @@
+{
+  "name": "clipboard-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass  --no-source-map sass:public/css -w"
+  },
+  "author": "ombasah",
+  "license": "ISC"
+}
